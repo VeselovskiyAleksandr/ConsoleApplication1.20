@@ -9,9 +9,9 @@ bool stringComp(char* st, char* substst) {
 	int i = 0, j = 0;
 	while (*(substst + i) != '\0') {
 		while (*(st + j) != '\0') {
-			if (*(substst + i) == *(st + j)) 
+			if (*(substst + i) == *(st + j) && (*(substst + i + 1) != '\0'))
 			{
-               if((*(st + j+1) == '\0')&&(*(substst + i + 1)!='\0')&& *(substst + i+1) == *(st + j+1)) {
+               if((*(st + j+1) == '\0')&&(*(substst + i + 1)!='\0')&&(st+j)==(substst+i)) {
 				return false;
 			}
 				break;
