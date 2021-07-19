@@ -38,7 +38,7 @@ int main()
 	setlocale(LC_ALL, "Rus");
 	char str[] = "Моя усадьба Салтыково";
 	char s[] = "Моя усадьба";
-	if (stringComp(str, s) == 0) {
+	if (stringComp(str, s) == false) {
 		cout <<"\nfalse" ;
 	}
 	else {
