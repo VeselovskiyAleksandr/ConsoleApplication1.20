@@ -11,7 +11,7 @@ bool stringComp(char* st, char* substst) {
 		while (*(st + j) != '\0') {
 			if (*(substst + i) == *(st + j) && (*(substst + i + 1) != '\0'))
 			{
-               if((*(st + j+1) == '\0')&&(*(substst + i + 1)!='\0')&&(st+j)==(substst+i)) {
+               if((*(st + j+1) == '\0')){
 				return false;
 			}
 				break;
